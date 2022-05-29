@@ -99,18 +99,27 @@ $imageSize: 60px;
   display: flex;
   align-items: center;
 }
+.info__item > .text {
+  &:first-letter {
+    padding-left: 20px;
+  }
+}
 .details {
-  padding: 20px 20px 0;
+  padding: 10px 20px ;
 
   .text {
+    margin: 0;
     padding: 20px;
     border-radius: 8px;
     background-color: #1f253d;
-  }
-  .text :nth-child(2),
-  .text :nth-child(3),
-  .text :nth-child(4) {
-    padding-top: 9px;
+    list-style-type: none;
+
+    > li {
+      padding-top: 9px;
+    }
+    :first-child {
+      padding: 0;
+    }
   }
 }
 .good {
@@ -168,7 +177,7 @@ $imageSize: 60px;
     flex-direction: column;
   }
   .photo {
-    margin: 10px 20px 0;
+    margin: 0 20px;
   }
   .good {
     flex-direction: row;
